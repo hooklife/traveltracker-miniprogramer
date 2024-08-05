@@ -1,0 +1,1 @@
+<view class="demo"><web-view src="@/static/hybrid/html/map.html"></web-view></view>

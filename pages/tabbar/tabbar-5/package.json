@@ -1,0 +1,18 @@
+{
+    "id": "Lx-user",
+    "name": "通用个人中心页面模板",
+    "displayName": "通用个人中心页面模板",
+    "version": "1.0.1",
+    "description": "通用个人中心页面模板，适用于各类应用页面设计",
+    "keywords": [
+        "个人中心",
+        "会员中心",
+        "页面UI"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "前端页面模板"
+        ]
+    }
+}
