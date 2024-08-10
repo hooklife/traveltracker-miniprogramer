@@ -1,7 +1,8 @@
 
-.content {
-	text-align: center;
-	height: 400rpx;
-	margin-top: 200rpx;
+.page-map-box.data-v-3077d852{
+	width: 750rpx; height: 600rpx;
+}
+.btn-position.data-v-3077d852{
+	margin-top: 10rpx;
 }
 

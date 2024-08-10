@@ -51,13 +51,13 @@
 				"pagePath": "pages/tabbar/tabbar-1/tabbar-1",
 				"iconPath": "static/img/tabbar/home.png",
 				"selectedIconPath": "static/img/tabbar/homeactive.png",
-				"text": "首页"
+				"text": "城市攻略"
 			},
 			{
 				"pagePath": "pages/tabbar/tabbar-2/tabbar-2",
 				"iconPath": "static/img/tabbar/guanzhu.png",
 				"selectedIconPath": "static/img/tabbar/guanzhuactive.png",
-				"text": "关注"
+				"text": "发现"
 			},
 			//#ifdef MP-WEIXIN
 			{
@@ -78,13 +78,13 @@
 				"pagePath": "pages/tabbar/tabbar-4/tabbar-4",
 				"iconPath": "static/img/tabbar/news.png",
 				"selectedIconPath": "static/img/tabbar/newsactive.png",
-				"text": "消息"
+				"text": "我的地图"
 			},
 			{
 				"pagePath": "pages/tabbar/tabbar-5/user",
 				"iconPath": "static/img/tabbar/me.png",
 				"selectedIconPath": "static/img/tabbar/meactive.png",
-				"text": "我"
+				"text": "个人中心"
 			}
 		]
 	}

@@ -40,9 +40,23 @@
     "mp-weixin" : {
         "appid" : "",
         "setting" : {
-            "urlCheck" : true
+            "urlCheck" : false
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "获取当前城市位置"
+            }
+        }
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "3L7BZ-NLUKR-FJBWQ-WNTUV-HWX36-CUBXV"
+                }
+            }
+        }
+    }
 }

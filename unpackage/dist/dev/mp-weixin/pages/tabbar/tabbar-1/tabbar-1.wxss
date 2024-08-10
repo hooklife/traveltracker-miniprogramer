@@ -1,7 +1,37 @@
 
 .content {
 	text-align: center;
+	padding: 0 20rpx;
 	height: 400rpx;
-	margin-top: 200rpx;
+}
+.swiper-item image{
+	 width:100%;
+	 border-radius: 3px;
+}
+.swiper-item{
+	 overflow: hidden;
+}
+.uni-searchbar{
+	 padding: 10rpx 0
+}
+.classification{
+	 display: flex;
+	 margin-top:10px;
+	 justify-content: space-between;
+}
+.classification-hot{
+	 display: flex;
+	 justify-content: space-between;
+	 flex-wrap: wrap;
+}
+.classification-hot text{
+	display: block;
+}
+.classification text{
+	display: block;
+}
+.classification image{
+	 widht:120rpx;
+	 height:120rpx;
 }
 

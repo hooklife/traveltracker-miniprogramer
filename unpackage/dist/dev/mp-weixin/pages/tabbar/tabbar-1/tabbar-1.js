@@ -103,6 +103,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uniSearchBar: function() {
+      return Promise.all(/*! import() | uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue */ 78))
+    },
+    uniSwiperDot: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot */ "uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue */ 89))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -138,7 +164,67 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -148,11 +234,47 @@ var _default =
 {
   data: function data() {
     return {
-      title: 'Hello' };
+      imageUrl: 'https://img2.baidu.com/it/u=1028011339,1319212411&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=313',
+      info: [{
+        content: '内容 A' },
+      {
+        content: '内容 B' },
+      {
+        content: '内容 C' }],
+
+      dataList: [{}, {}, {}, {}, {}, {}, {}],
+      current: 0,
+      mode: 'round' };
 
   },
-  onLoad: function onLoad() {},
-  methods: {} };exports.default = _default;
+  onReachBottom: function onReachBottom() {
+    // 页面滚动到底部时触发
+    console.log('触底了！');
+
+    for (var i = 0; i++; i < 30) {
+      this.dataList.push({});
+    }
+
+  },
+  mounted: function mounted() {
+    uni.getLocation({
+      // gcj02 返回国测局坐标（App 和 H5 需配置定位 SDK 信息才可支持 gcj02。）
+      type: 'gcj02',
+      // 是否解析地址信息（仅App平台支持（安卓需指定 type 为 gcj02 并配置三方定位SDK））
+      geocode: true,
+      success: function success(res) {
+        console.log(res);
+      } });
+
+    uni.setNavigationBarTitle({
+      title: 'this.title' });
+
+  },
+  methods: {
+    change: function change(e) {
+      this.current = e.detail.current;
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 18 */

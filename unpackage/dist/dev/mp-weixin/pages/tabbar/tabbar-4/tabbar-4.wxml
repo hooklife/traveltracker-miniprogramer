@@ -1,1 +1,1 @@
-<view class="demo"><web-view src="@/static/hybrid/html/map.html"></web-view></view>
+<view class="data-v-3077d852"><view class="page-body data-v-3077d852"><view class="page-map-box data-v-3077d852"><map style="width:750rpx;height:600rpx;" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" markers="{{markers}}" class="data-v-3077d852"></map></view><view class="btn-position data-v-3077d852"><button type="default" data-event-opts="{{[['tap',[['getLocationTap',['$event']]]]]}}" bindtap="__e" class="data-v-3077d852">获取定位</button></view></view></view>
