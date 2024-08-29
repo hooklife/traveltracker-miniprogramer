@@ -1,6 +1,22 @@
 
 .page-map-box.data-v-3077d852{
-	width: 750rpx; height: 600rpx;
+	width: 750rpx; 
+	/* height: 600rpx; */
+}
+.list-box.data-v-3077d852{
+	height: 40rpx;
+	line-height: 40rpx;
+	border-bottom: 1px solid #ddd;
+	padding: 40rpx 20rpx;
+	display: block;
+}
+.list-box-content.data-v-3077d852{
+	height: 700rpx;
+	overflow: auto;
+}
+.slot-button.data-v-3077d852{
+	/* background-color: red; */
+	color:red;
 }
 .btn-position.data-v-3077d852{
 	margin-top: 10rpx;

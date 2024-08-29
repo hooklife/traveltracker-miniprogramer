@@ -38,6 +38,7 @@
     },
     "quickapp" : {},
     "mp-weixin" : {
+		"requiredPrivateInfos": ["getLocation"],
         "appid" : "",
         "setting" : {
             "urlCheck" : false

@@ -54,6 +54,9 @@
       }
     ]
   },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
   "permission": {
     "scope.userLocation": {
       "desc": "获取当前城市位置"
